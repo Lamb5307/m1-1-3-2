@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 13.0.0.0 for Windows">
+    <link rel="stylesheet" href="style.css">
+<TITLE>符号理論</TITLE>
+</HEAD>
+<BODY>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<h1>【　符号理論　】</h1>
+
+<p id="buttom"><strong>表示</strong></p><br>
+あらゆる情報は数値に変換して情報量として表現できます。情報を数値に変換することを<p class="di"><b>｢符号化｣</b></p>といい、符号化することで、データの利用範囲を広げ、データ活用の効率化を実現できます。<br>
+<p class="di"><b>｢符号理論｣</b></p>とは、情報を符号化して伝送を行う際の正確性や効率性に関する理論のことで、情報理論を応用した理論です。<br>
+
+
+<strong>(1)符号化の種類</strong><br>
+符号化には、次の2つの種類があります。<br>
+<dt><b>●情報源符号化</b></dt>
+<dd><p class="di"><b>｢情報源符号化｣</b></p>とは、転送前のデータを効率的に圧縮することを目的とした符号化のことです。インターネット上でのデータ圧縮形式やコンパクト符号などがあります。</dd>
+<dt><b>●通信路符号化</b></dt>
+<dd><p class="di"><b>｢通信路符号化｣</b></p>とは、データ転送時に通信路上に存在する雑音などの障害への耐性を強化するために、余分なデータビット(冗長ビット)を追加する符号化のことです。音楽CDではリード・ソロモン符号を使って傷やほこりによる誤りを訂正しています。データの信頼性を高めるために、誤り検出訂正や前方誤り訂正(FEC)などがあります。</dd>
+<strong>(2)A/D変換</strong><br>
+文章や帳票、写真、絵画などのアナログなものをコンピュータで取り扱えるようにするには、デジタル信号(0と1からなるコード)に変換して<p class="di"><b>｢デジタル化｣</b></p>する必要があります。<p class="di"><b>｢A/D変換｣</b></p>とは、アナログ信号からデジタル信号へ変換することです。逆に、デジタル信号をアナログ信号に戻すことを<p class="di"><b>｢D/A変換｣</b></p>といいます。<br>
+A/D変換の流れは、次のとおりです。<br>
+<P><IMG src="1-1-3-2-1.JPG" width="500" border="0"></P>
+
+    <script>
+        const buttom = document.getElementById('buttom');
+        const diElements = document.querySelectorAll('.di'); // クラスの要素をすべて取得
+    
+        // マウスホバー時
+        buttom.addEventListener('mouseover', () => {
+            diElements.forEach(di => {
+                di.style.opacity = '1';
+            });
+        }, false);
+    
+        // マウスが離れている時
+        buttom.addEventListener('mouseleave', () => {
+            diElements.forEach(di => {
+                di.style.opacity = '0';
+            });
+        }, false);
+    </script>
